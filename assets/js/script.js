@@ -24,6 +24,7 @@ form.addEventListener("submit", async (e) => {
       <p>🌡️ ${data.main.temp} °C</p>
       <p>☁️ ${data.weather[0].description}</p>
       <p>Humidity: ${data.main.humidity}</p>
+      <p>Wind Speed: ${data.wind.speed}</p>
     `;
     } catch (error) {
         resultDiv.innerHTML = `<p style="color: red;">${error.message}</p>`;
